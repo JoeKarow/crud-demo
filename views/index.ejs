@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Demo</title>
+</head>
+
+<body>
+    <h1>It's CRUD time.</h1>
+
+
+
+    <form action="/quotes" method="POST">
+        <input type="text" placeholder="name" name="name">
+        <input type="text" placeholder="quote" name="quote">
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <div>
+        <h2>Rewrite History</h2>
+        <button id="update-button">Rewrite History</button>
+    </div>
+
+    <div>
+        <h2>Okay - enough of the Prius hate.</h2>
+        <button id="delete-button">Toyota tried, okay?</button>
+    </div>
+    <div id="message"></div>
+
+
+
+    <ul class="quotes">
+
+        <% for(let i=0; i < quotes.length; i++) {%>
+            <li class="quote">
+                <span>
+                    <%= quotes[i].name %>
+                </span>:
+                <span>
+                    <%= quotes[i].quote %>
+                </span>
+            </li>
+            <% } %>
+    </ul>
+    <script src="/main.js"></script>
+</body>
+
+</html>
