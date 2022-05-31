@@ -50,9 +50,6 @@ MongoClient.connect(
 
     // update
     app.put('/quotes', async (req, res) => {
-      // const cursor = await quotesCollection.aggregate([
-      //   { $sample: { size: 1 } },
-      // ]);
       const cursor = await randomRecord(quotesCollection);
       console.dir(cursor);
       await quotesCollection
