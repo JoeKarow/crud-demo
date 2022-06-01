@@ -5,6 +5,8 @@ require('dotenv').config();
 const MongoClient = mongoDB.MongoClient;
 const app = express();
 
+const srvPort = process.env.LISTEN_PORT || 3000;
+
 // set EJS
 app.set('view engine', 'ejs');
 
@@ -87,8 +89,8 @@ MongoClient.connect(
         .catch((err) => console.error(err));
     });
 
-    app.listen(process.env.LISTEN_PORT, () =>
-      console.info(`Server started on port ${process.env.LISTEN_PORT}`)
+    app.listen(srvPort, () =>
+      console.info(`Server started on port ${srvPort}`)
     );
   });
 
