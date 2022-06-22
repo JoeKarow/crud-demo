@@ -1,15 +1,3 @@
 {
-    "extends": [
-        "config:base",
-        ":preserveSemverRanges",
-        ":prNotPending",
-        ":automergeAll"
-    ],
-    "addLabels": [
-        "dependencies"
-    ],
-    "reviewersFromCodeOwners": true,
-    "assigneesFromCodeOwners": true,
-    "semanticCommits": "enabled",
-    "assignAutomerge": true
+    "extends": ["github>JoeKarow/renovate-config"]
 }
