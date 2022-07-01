@@ -4,8 +4,8 @@
 Building a quick and dirty CRUD app, following [this tutorial](https://zellwk.com/blog/crud-express-mongodb/) by @zellwk.
 
 <div align="center">
-
-![Dog enjoying the CRUD](https://media.giphy.com/media/NSXm9DYdb0O3zkiLa1/giphy-downsized-large.gif)
+  
+![Dog enjoying the CRUD](https://media.giphy.com/media/NSXm9DYdb0O3zkiLa1/giphy-downsized.gif)
 
 </div>
 
